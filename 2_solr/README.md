@@ -1,5 +1,4 @@
 ###本地指令
-
 开启
 bin/solr start -e cloud -noprompt
 
@@ -17,21 +16,28 @@ bin/post -c gettingstarted /Users/chen/Documents/individulal_project/data/testjs
 
 ###API
 搜索
+```
 http://54.171.189.58:8983/solr/gettingstarted/select?indent=on&q=*:*&wt=json
+```
 
 上传
+```
 curl -X POST -H 'Content-type:application/json' --data-binary '[
 {
   "id": "bsdsds"
   }
 ]' http://54.171.189.58:8983/solr/gettingstarted/update
+```
 
 删除所有
-curl -X POST -H 'Content-type:text/xml' --data-binary "<delete><query>*:*</query></delete>"  http://54.171.189.58:8983/solr/gettingstarted/update
+```
+   curl -X POST -H 'Content-type:text/xml' --data-binary "<delete><query>*:*</query></delete>"  http://54.171.189.58:8983/solr/gettingstarted/update
+```
 
 删除
+```
 curl -X POST -H 'Content-type:text/xml' --data-binary "<delete><query>id:5555 6666</query></delete>"  http://54.171.189.58:8983/solr/gettingstarted/update
-
+```
 
 ###非网络模式
 
