@@ -4,7 +4,7 @@
 
 This is a project which can show stroyline graph of search keywords on web application. 
 
-![](https://raw.githubusercontent.com/bingweichen/Imperial_final_project/master/image/flowchart/overview%20-%20Page%201.png )
+![](https://raw.githubusercontent.com/bingweichen/Imperial_final_project/master/image/flowchart/imp_overview.png )
 
 this is the overview of this project.
 
@@ -37,7 +37,7 @@ JSON: id,title,author,url,date,content,abstract, references
 ###Solr
 All commands and API in README.md of Solr file.
 
-![](https://raw.githubusercontent.com/bingweichen/Imperial_final_project/master/image/flowchart/solr%20-%20Page%201%20(1).png)
+![](https://raw.githubusercontent.com/bingweichen/Imperial_final_project/master/image/flowchart/Implementataion_overview.png)
 
 1. Download Solr from: http://www.apache.org/dyn/closer.lua/lucene/solr/6.2.0
 2. using commands and API
