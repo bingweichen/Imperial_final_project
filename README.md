@@ -34,6 +34,13 @@ https://www.dropbox.com/sh/aqy4k19az24b0in/AADeJucNMZE2UcgY2nME6F0-a?dl=0
 XML: SectLabel,PharseHed,ParsCit
 
 JSON: id,title,author,url,date,content,abstract, references
+
+download:
+
+​	 json-simple-1.1.1.jar
+
+​	mysql-connector-java-5.1.39-bin.jar
+
 ###Solr
 All commands and API in README.md of Solr file.
 
@@ -42,12 +49,13 @@ All commands and API in README.md of Solr file.
 1. Download Solr from: http://www.apache.org/dyn/closer.lua/lucene/solr/6.2.0
 2. using commands and API
      1. construct Solr 
-        2. upload schema
-           3. post all papers of JSON to Solr	
-3. change the webdefault.xml of jetty to solve CROS problem
+     2. upload schema
+     3. post all papers of JSON to Solr
+3. change the webdefault.xml of jetty to solve cross domain problem
 
 After finish this, the solr api can be used to get required paper in JSON.
 ###Coherence graph java
+
 1. get vaild paper data in JSON from Solr
 2. construct graph by adding each paper to vertex
 3. adding citation label edges
@@ -55,6 +63,18 @@ After finish this, the solr api can be used to get required paper in JSON.
 5. normalize
 6. adding ancestral label edges
 7. construct coherence graph using divide-and-conquer algorithm
+
+download: 
+
+​	apache-httpcomponents-httpclient.jar
+
+​	apache-httpcomponents-httpcore.jar
+
+​	httpclient-4.3-beta1.jar
+
+​	java-json.jar
+
+​	json-simple-1.1.1.jar
 
 detail:
 
@@ -85,11 +105,46 @@ detail:
 7. construct coherence graph using divide-and-conquer algorithm
    1. get all pairs which coherence exceed the threshold value
    2. using chain object to store these pair of paper and put the chain into priorty queue
-   3. ​
+   3. collect the chain with highest coherence and extend it if it is short than length of sub-chain
+   4. connect chains in same storyline
 
 ###Java API Server
 
+1. set up Spark
+
+    https://sparktutorials.github.io/2015/04/02/setting-up-a-spark-project-with-maven.html
+
+2. implement CORS in spark
+
+    https://sparktutorials.github.io/2016/05/01/cors.html
+
 ###Web
+
+React
+
+1. download ant-design
+
+    https://github.com/ant-design/ant-design
+
+2. install npm
+
+3. install node.js
+
+4. `npm install antd`
+
+5. `npm start`
+
+D3.js
+
+1.   download from 
+
+     https://github.com/d3/d3.git
+
+2.   using force layout
+
+
+
+
 
 debug
 
